@@ -3,7 +3,7 @@ package AbstractFactory;
 public class Main {
     public static void main(String[] args) {
         FabricaVeiculos fabrica;
-        String tipoVeiculo = "Eletrico"; // Pode ser "Gasolina" ou "Eletrico"
+        String tipoVeiculo = "Eletrico";
 
         if (tipoVeiculo.equals("Gasolina")) {
             fabrica = new FabricaGasolina();
@@ -14,7 +14,7 @@ public class Main {
         Veiculo veiculo = fabrica.criarVeiculo();
         Motor motor = fabrica.criarMotor();
 
-        veiculo.montar(); // Monta o veículo
-        motor.ligar();    // Liga o motor
+        veiculo.montar();
+        motor.ligar();
     }
 }

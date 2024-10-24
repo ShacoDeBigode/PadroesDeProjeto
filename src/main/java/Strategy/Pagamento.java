@@ -1,4 +1,5 @@
 package Strategy;
 
-public class Pagamento {
+public interface Pagamento {
+    void processarPagamento(double valor);
 }
